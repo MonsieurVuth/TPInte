@@ -129,9 +129,27 @@
 				<groupId>org.wildfly.plugins</groupId>
 				<artifactId>wildfly-maven-plugin</artifactId>
 				<version>1.2.1.Final</version>
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>	
+					</execution>
+				</executions>
 				<configuration>
 					<version>11.0.0.Final</version>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<executions>
+					<execution>
+						<goals>deploy</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
