@@ -151,6 +151,7 @@
 					<goals>
 						deploy						
 					</goals>
+					<releaseProfiles>release</releaseProfiles>
 				</configuration>
 			</plugin>
 		</plugins>
