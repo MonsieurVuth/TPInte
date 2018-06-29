@@ -147,7 +147,9 @@
 				<version>2.5.3</version>
 				<executions>
 					<execution>
-						<goals>deploy</goals>
+						<goals>
+							<goal>deploy</goal>						
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
