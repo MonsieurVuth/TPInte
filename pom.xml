@@ -148,15 +148,10 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<goals>
+						deploy						
+					</goals>
 				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							deploy						
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
